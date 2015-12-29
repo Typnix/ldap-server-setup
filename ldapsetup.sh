@@ -146,6 +146,8 @@ dn: ou=$group,$LDAP_DOMAIN
 objectClass: organizationalUnit
 ou: $group
 __EOF
+done
+
 if [  $? -gt 0 ]; then
 	echo "Domain is not created"; 
 fi
