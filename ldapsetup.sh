@@ -202,7 +202,7 @@ usage(){
 while getopts ":acd:im:o:t" opt; do
   case $opt in
     a) 	ENABLE_INTERNALCA=1;ENABLE_INSTALL=1;ENABLE_SUDOERS=1;ENABLE_SSH_KEY_AUTH=1;ENABLE_TESTUSER=1 ;;
-    c)  NABLE_INTERNALCA=1 >&2 ;;
+    c)  ENABLE_INTERNALCA=1 >&2 ;;
     d)  DOMAIN=$OPTARG >&2 ;;
     i)  ENABLE_INSTALL=1 >&2 ;;
     m)  ADMIN_NAME=$OPTARG >&2 ;;
